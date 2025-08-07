@@ -27,11 +27,10 @@ const UpcomingEvents = () => {
       description: "Master the art of pitching your startup idea to investors",
       cta: "Register",
     },
-
   ];
 
   return (
-    <section className="w-full bg-[#0F172A] py-16 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[#0E001B] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -44,11 +43,11 @@ const UpcomingEvents = () => {
           <h2 className="text-4xl font-bold text-white mb-4">
             Upcoming Events
           </h2>
-          <p className="text-lg text-[#E2E8F0] max-w-2xl mx-auto">
+          <p className="text-lg text-[#D1D5DB] max-w-2xl mx-auto">
             Stay updated with our latest initiatives and opportunities
           </p>
           <motion.div
-            className="w-20 h-1 bg-gradient-to-r from-[#8B5CF6] to-[#FCD34D] rounded-full mx-auto mt-6"
+            className="w-20 h-1 bg-gradient-to-r from-[#8B5CF6] to-[#D8AFFF] rounded-full mx-auto mt-6"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -79,10 +78,10 @@ const UpcomingEvents = () => {
               variants={item}
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="bg-[#1E293B] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-[#8B5CF6]/30 border border-[#8B5CF6]/20 hover:border-[#8B5CF6]/50 transition-all duration-300 relative z-10"
+              className="bg-[#1C0233] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-[#8B5CF6]/30 border border-[#8B5CF6]/20 hover:border-[#8B5CF6]/50 transition-all duration-300 relative z-10"
             >
               {/* Event Dot (Desktop Timeline) */}
-              <div className="hidden lg:block absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-[#8B5CF6] border-2 border-[#FCD34D]"></div>
+              <div className="hidden lg:block absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-[#8B5CF6] border-2 border-[#D8AFFF]"></div>
 
               <div className="p-6">
                 <div className="flex items-start mb-4">
@@ -102,18 +101,18 @@ const UpcomingEvents = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-1">
+                    <h3 className="text-xl font-semibold text-[#FFFFFF] mb-1">
                       {event.name}
                     </h3>
                     <p className="text-[#8B5CF6] font-medium">{event.date}</p>
                   </div>
                 </div>
 
-                <p className="text-[#E2E8F0] mb-6">{event.description}</p>
+                <p className="text-[#D1D5DB] mb-6">{event.description}</p>
 
                 <Link
                   href="#"
-                  className="inline-block px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white hover:shadow-[0_0_15px_#8B5CF6]/50 transition-all duration-300"
+                  className="inline-block px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#1C0233] text-[#FFFFFF] hover:shadow-[0_0_15px_#8B5CF6]/50 transition-all duration-300"
                 >
                   {event.cta}
                 </Link>
@@ -123,7 +122,6 @@ const UpcomingEvents = () => {
         </motion.div>
 
         {/* View All Button */}
-        
       </div>
     </section>
   );

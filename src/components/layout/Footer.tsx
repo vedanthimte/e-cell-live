@@ -3,6 +3,17 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Logo from "../public/E-CELL.png";
 
+// Color palette constants
+const COLORS = {
+  midnightPurple: "#0E001B",
+  royalViolet: "#8B5CF6",
+  lavenderGlow: "#B497FF",
+  electricWhite: "#FFFFFF",
+  coolGray: "#D1D5DB",
+  deepIndigo: "#1C0233",
+  neonLilac: "#D8AFFF",
+};
+
 const Footer = () => {
   const socialLinks = [
     {
@@ -48,13 +59,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-[#0E001B] border-t border-[#B497FF]/30">
+    <footer
+      className="w-full relative overflow-hidden"
+      style={{ backgroundColor: COLORS.midnightPurple }}
+    >
       {/* Glowing Divider */}
       <motion.div
         initial={{ opacity: 0, scaleX: 0 }}
         whileInView={{ opacity: 1, scaleX: 1 }}
         transition={{ duration: 0.5 }}
         className="h-px w-full bg-gradient-to-r from-transparent via-[#B497FF] to-transparent"
+        style={{
+          background: `linear-gradient(90deg, transparent, ${COLORS.lavenderGlow}, transparent)`,
+        }}
       />
 
       {/* Main Footer Content */}
@@ -71,14 +88,23 @@ const Footer = () => {
                 className="group-hover:rotate-6 transition-transform duration-300"
               />
               <div className="ml-3">
-                <h1 className="text-white font-bold text-lg">
+                <motion.h1
+                  className="font-bold text-lg"
+                  style={{ color: COLORS.electricWhite }}
+                  whileHover={{ x: 2 }}
+                >
                   E-Cell{" "}
-                  <span className="text-[#D1D5DB] font-medium">PRMIT&R</span>
-                </h1>
+                  <span
+                    className="font-medium"
+                    style={{ color: COLORS.coolGray }}
+                  >
+                    PRMIT&R
+                  </span>
+                </motion.h1>
               </div>
             </Link>
 
-            <p className="text-[#D1D5DB] text-sm">
+            <p className="text-sm" style={{ color: COLORS.coolGray }}>
               Empowering the next generation of student entrepreneurs at
               PRMIT&R.
             </p>
@@ -91,8 +117,12 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#D1D5DB] hover:text-[#D8AFFF] transition-colors duration-300"
-                  whileHover={{ scale: 1.1 }}
+                  className="transition-colors duration-300"
+                  style={{ color: COLORS.coolGray }}
+                  whileHover={{
+                    scale: 1.1,
+                    color: COLORS.neonLilac,
+                  }}
                   whileTap={{ scale: 0.95 }}
                 >
                   {social.icon}
@@ -103,14 +133,23 @@ const Footer = () => {
 
           {/* Column 2 - Navigation */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg">Navigation</h3>
+            <h3
+              className="font-semibold text-lg"
+              style={{ color: COLORS.electricWhite }}
+            >
+              Navigation
+            </h3>
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} passHref>
                     <motion.a
-                      className="text-[#D1D5DB] hover:text-[#D8AFFF] text-sm transition-colors duration-300"
-                      whileHover={{ x: 4 }}
+                      className="text-sm transition-colors duration-300"
+                      style={{ color: COLORS.coolGray }}
+                      whileHover={{
+                        x: 4,
+                        color: COLORS.neonLilac,
+                      }}
                     >
                       {link.name}
                     </motion.a>
@@ -122,14 +161,23 @@ const Footer = () => {
 
           {/* Column 3 - Join Us */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg">Join Us</h3>
+            <h3
+              className="font-semibold text-lg"
+              style={{ color: COLORS.electricWhite }}
+            >
+              Join Us
+            </h3>
             <ul className="space-y-3">
               {joinLinks.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} passHref>
                     <motion.a
-                      className="text-[#D1D5DB] hover:text-[#D8AFFF] text-sm transition-colors duration-300"
-                      whileHover={{ x: 4 }}
+                      className="text-sm transition-colors duration-300"
+                      style={{ color: COLORS.coolGray }}
+                      whileHover={{
+                        x: 4,
+                        color: COLORS.neonLilac,
+                      }}
                     >
                       {link.name}
                     </motion.a>
@@ -141,8 +189,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-16 pt-6 border-t border-[#B497FF]/10">
-          <p className="text-[#D1D5DB] text-xs text-center">
+        <div
+          className="mt-16 pt-6 border-t"
+          style={{ borderColor: `${COLORS.lavenderGlow}10` }}
+        >
+          <p className="text-xs text-center" style={{ color: COLORS.coolGray }}>
             © 2025 E-Cell, PRMIT&R. All rights reserved.
           </p>
         </div>
@@ -151,17 +202,22 @@ const Footer = () => {
       {/* Back to Top Button */}
       <motion.button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-6 right-6 p-3 bg-[#8B5CF6] rounded-full shadow-lg hover:bg-[#7C3AED] transition-colors duration-300"
+        className="fixed bottom-6 right-6 p-3 rounded-full shadow-lg transition-colors duration-300"
+        style={{ backgroundColor: COLORS.royalViolet }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        whileHover={{ scale: 1.1 }}
+        whileHover={{
+          scale: 1.1,
+          backgroundColor: COLORS.deepIndigo,
+        }}
         whileTap={{ scale: 0.9 }}
       >
         <svg
-          className="w-5 h-5 text-white"
+          className="w-5 h-5"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
+          style={{ color: COLORS.electricWhite }}
         >
           <path
             strokeLinecap="round"
@@ -171,6 +227,15 @@ const Footer = () => {
           />
         </svg>
       </motion.button>
+
+      {/* Decorative Purple Glow */}
+      <div
+        className="absolute -bottom-32 -left-32 w-64 h-64 rounded-full opacity-20 pointer-events-none"
+        style={{
+          background: `radial-gradient(circle, ${COLORS.royalViolet} 0%, transparent 70%)`,
+          filter: "blur(40px)",
+        }}
+      />
     </footer>
   );
 };

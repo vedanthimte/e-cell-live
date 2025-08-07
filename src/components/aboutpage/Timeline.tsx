@@ -137,14 +137,14 @@ const Timeline = () => {
 
                 {/* Event Card */}
                 <div
-                  className={`p-6 rounded-xl bg-[#0E001B] border border-[#8B5CF6]/30 hover:border-[#D8AFFF]/50 hover:shadow-[0_0_15px_#D8AFFF]/30 transition-all duration-300 ${
+                  className={`p-6 rounded-xl bg-[#1C0233] transition-all duration-300 ${
                     index % 2 === 0 ? "text-right" : "text-left"
                   }`}
                 >
                   <div className="text-sm font-bold text-[#8B5CF6] mb-2">
                     {event.date}
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">
+                  <h3 className="text-xl font-semibold text-[#FFFFFF] mb-2">
                     {event.title}
                   </h3>
                   <p className="text-[#D1D5DB] mb-2">{event.description}</p>
@@ -181,11 +181,11 @@ const Timeline = () => {
                   <div className="absolute left-1/2 top-1/2 sm:top-0 sm:left-0 sm:right-0 sm:mx-auto w-4 h-4 rounded-full bg-[#8B5CF6] border-2 border-[#D8AFFF] transform -translate-x-1/2 sm:translate-x-0 -translate-y-1/2 sm:translate-y-0 z-10"></div>
 
                   {/* Event Card */}
-                  <div className="p-4 sm:p-6 rounded-xl bg-[#0E001B] border border-[#8B5CF6]/30 hover:border-[#D8AFFF]/50 hover:shadow-[0_0_15px_#D8AFFF]/30 transition-all duration-300 mt-6 sm:mt-8 text-center">
+                  <div className="p-4 sm:p-6 rounded-xl bg-[#1C0233] transition-all duration-300 mt-6 sm:mt-8 text-center">
                     <div className="text-xs sm:text-sm font-bold text-[#8B5CF6] mb-2">
                       {event.date}
                     </div>
-                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-[#FFFFFF] mb-2">
                       {event.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-[#D1D5DB] mb-2 hidden sm:block">

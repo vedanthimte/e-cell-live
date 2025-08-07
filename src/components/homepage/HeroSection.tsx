@@ -3,6 +3,17 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Logo from "../public/E-CELL.png";
 
+// Color palette constants
+const COLORS = {
+  midnightPurple: "#0E001B",
+  royalViolet: "#8B5CF6",
+  lavenderGlow: "#B497FF",
+  electricWhite: "#FFFFFF",
+  coolGray: "#D1D5DB",
+  deepIndigo: "#1C0233",
+  neonLilac: "#D8AFFF",
+};
+
 const HeroSection = () => {
   // Animation variants
   const container = {
@@ -22,16 +33,34 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen w-full bg-[#0E001B] overflow-hidden">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: COLORS.midnightPurple }}
+    >
       {/* Background Glow Effects */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-[#8B5CF6] opacity-20 blur-3xl animate-float1"></div>
-        <div className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full bg-[#D8AFFF] opacity-15 blur-3xl animate-float2"></div>
-        <div className="absolute bottom-1/4 left-1/2 w-60 h-60 rounded-full bg-[#6D28D9] opacity-10 blur-3xl animate-float3"></div>
+        <div
+          className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full opacity-20 blur-3xl animate-float1"
+          style={{ backgroundColor: COLORS.royalViolet }}
+        ></div>
+        <div
+          className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full opacity-15 blur-3xl animate-float2"
+          style={{ backgroundColor: COLORS.neonLilac }}
+        ></div>
+        <div
+          className="absolute bottom-1/4 left-1/2 w-60 h-60 rounded-full opacity-10 blur-3xl animate-float3"
+          style={{ backgroundColor: COLORS.deepIndigo }}
+        ></div>
       </div>
 
-      {/* Starfield Background (Optional) */}
-      <div className="absolute inset-0 starfield"></div>
+      {/* Starfield Background */}
+      <div
+        className="absolute inset-0 starfield"
+        style={{
+          backgroundImage: `radial-gradient(circle, ${COLORS.neonLilac}10 1px, transparent 1px)`,
+          backgroundSize: "20px 20px",
+        }}
+      ></div>
 
       {/* Content Container */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between py-24 lg:py-0">
@@ -42,18 +71,27 @@ const HeroSection = () => {
           animate="show"
           className="lg:w-1/2 text-center lg:text-left z-10"
         >
-          
-
           {/* Headline */}
           <motion.h1
             variants={item}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+            style={{ color: COLORS.electricWhite }}
           >
-            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-white to-[#D8AFFF]">
+            <span
+              className="text-gradient bg-clip-text text-transparent"
+              style={{
+                backgroundImage: `linear-gradient(to right, ${COLORS.electricWhite}, ${COLORS.neonLilac})`,
+              }}
+            >
               Igniting Innovation.
             </span>
             <br />
-            <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-[#D8AFFF] to-white">
+            <span
+              className="text-gradient bg-clip-text text-transparent"
+              style={{
+                backgroundImage: `linear-gradient(to right, ${COLORS.neonLilac}, ${COLORS.electricWhite})`,
+              }}
+            >
               Inspiring Entrepreneurs.
             </span>
           </motion.h1>
@@ -61,7 +99,8 @@ const HeroSection = () => {
           {/* Subheadline */}
           <motion.p
             variants={item}
-            className="text-lg text-[#D1D5DB] max-w-lg mx-auto lg:mx-0 mb-10"
+            className="text-lg max-w-lg mx-auto lg:mx-0 mb-10"
+            style={{ color: COLORS.coolGray }}
           >
             E-Cell, PRMIT&R is a student-run platform fostering innovation,
             startups, and a future driven by young entrepreneurs.
@@ -74,10 +113,14 @@ const HeroSection = () => {
           >
             <Link href="/register" passHref>
               <motion.a
-                className="px-8 py-3 bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white rounded-full font-medium shadow-lg hover:shadow-[#D8AFFF]/40 transition-all duration-300 text-center"
+                className="px-8 py-3 text-white rounded-full font-medium shadow-lg transition-all duration-300 text-center"
+                style={{
+                  background: `linear-gradient(to right, ${COLORS.royalViolet}, ${COLORS.deepIndigo})`,
+                  boxShadow: `0 0 0 ${COLORS.neonLilac}40`,
+                }}
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0 0 20px rgba(216, 175, 255, 0.5)",
+                  boxShadow: `0 0 20px ${COLORS.neonLilac}80`,
                 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -86,8 +129,16 @@ const HeroSection = () => {
             </Link>
             <Link href="/events" passHref>
               <motion.a
-                className="px-8 py-3 border-2 border-[#8B5CF6] text-[#D1D5DB] rounded-full font-medium hover:text-white hover:bg-[#8B5CF6]/10 transition-all duration-300 text-center"
-                whileHover={{ scale: 1.05 }}
+                className="px-8 py-3 border-2 rounded-full font-medium transition-all duration-300 text-center"
+                style={{
+                  borderColor: COLORS.royalViolet,
+                  color: COLORS.coolGray,
+                }}
+                whileHover={{
+                  scale: 1.05,
+                  color: COLORS.electricWhite,
+                  backgroundColor: `${COLORS.royalViolet}10`,
+                }}
                 whileTap={{ scale: 0.95 }}
               >
                 Explore Events
@@ -128,8 +179,8 @@ const HeroSection = () => {
                     fx="50%"
                     fy="50%"
                   >
-                    <stop offset="0%" stopColor="#8B5CF6" />
-                    <stop offset="100%" stopColor="#0E001B" />
+                    <stop offset="0%" stopColor={COLORS.royalViolet} />
+                    <stop offset="100%" stopColor={COLORS.midnightPurple} />
                   </radialGradient>
                 </defs>
 
@@ -137,7 +188,7 @@ const HeroSection = () => {
                 <path
                   d="M150,200 Q250,100 350,200 T250,400 T150,200"
                   fill="none"
-                  stroke="#D8AFFF"
+                  stroke={COLORS.neonLilac}
                   strokeWidth="2"
                   strokeDasharray="5,5"
                 />
@@ -146,7 +197,7 @@ const HeroSection = () => {
                   cy="250"
                   r="50"
                   fill="none"
-                  stroke="#FFFFFF"
+                  stroke={COLORS.electricWhite}
                   strokeWidth="2"
                 />
 
@@ -155,7 +206,7 @@ const HeroSection = () => {
                   cx="200"
                   cy="150"
                   r="10"
-                  fill="#8B5CF6"
+                  fill={COLORS.royalViolet}
                   animate={{
                     y: [0, -15, 0],
                   }}
@@ -169,7 +220,7 @@ const HeroSection = () => {
                   cx="300"
                   cy="350"
                   r="8"
-                  fill="#D8AFFF"
+                  fill={COLORS.neonLilac}
                   animate={{
                     y: [0, 15, 0],
                   }}
@@ -194,7 +245,9 @@ const HeroSection = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
       >
         <div className="flex flex-col items-center">
-          <p className="text-sm text-[#D1D5DB] mb-2">Scroll Down</p>
+          <p className="text-sm mb-2" style={{ color: COLORS.coolGray }}>
+            Scroll Down
+          </p>
           <motion.div
             animate={{
               y: [0, 10, 0],
@@ -206,10 +259,11 @@ const HeroSection = () => {
             }}
           >
             <svg
-              className="w-6 h-6 text-[#D8AFFF]"
+              className="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              style={{ color: COLORS.neonLilac }}
             >
               <path
                 strokeLinecap="round"
@@ -239,15 +293,6 @@ const HeroSection = () => {
           100% {
             background-position: 0% 50%;
           }
-        }
-
-        .starfield {
-          background-image: radial-gradient(
-            circle,
-            rgba(216, 175, 255, 0.1) 1px,
-            transparent 1px
-          );
-          background-size: 20px 20px;
         }
 
         .animate-float1 {

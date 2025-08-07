@@ -76,12 +76,12 @@ export default function Login() {
         <meta name="description" content="Login to your E-Cell account" />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-[#0E001B] flex items-center justify-center p-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full max-w-md bg-white rounded-xl shadow-lg overflow-hidden"
+          className="w-full max-w-md bg-[#1C0233] rounded-xl shadow-lg overflow-hidden"
         >
           <div className="p-8">
             <div className="text-center mb-8">
@@ -92,10 +92,10 @@ export default function Login() {
                   className="h-12 mx-auto mb-4"
                 />
               </Link>
-              <h1 className="text-3xl font-bold text-gray-800 mb-2">
+              <h1 className="text-3xl font-bold text-[#FFFFFF] mb-2">
                 Welcome Back to E-Cell!
               </h1>
-              <p className="text-gray-600">
+              <p className="text-[#D1D5DB]">
                 Log in to explore events, register, and grow your startup
                 journey.
               </p>
@@ -115,7 +115,7 @@ export default function Login() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-[#FFFFFF] mb-1"
                 >
                   Email Address
                 </label>
@@ -127,7 +127,7 @@ export default function Login() {
                   onChange={handleChange}
                   className={`w-full px-4 py-2 rounded-lg border ${
                     errors.email ? "border-red-500" : "border-gray-300"
-                  } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                  } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                   placeholder="Enter your email"
                 />
                 {errors.email && (
@@ -138,7 +138,7 @@ export default function Login() {
               <div>
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-[#FFFFFF] mb-1"
                 >
                   Password
                 </label>
@@ -151,7 +151,7 @@ export default function Login() {
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
                       errors.password ? "border-red-500" : "border-gray-300"
-                    } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                    } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                     placeholder="Enter your password"
                   />
                   <button
@@ -214,11 +214,11 @@ export default function Login() {
                     type="checkbox"
                     checked={formData.rememberMe}
                     onChange={handleChange}
-                    className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                    className="w-4 h-4 text-[#8B5CF6] border-[#D1D5DB] rounded focus:ring-[#8B5CF6]"
                   />
                   <label
                     htmlFor="rememberMe"
-                    className="ml-2 block text-sm text-gray-700"
+                    className="ml-2 block text-sm text-[#D1D5DB]"
                   >
                     Remember me
                   </label>
@@ -227,7 +227,7 @@ export default function Login() {
                 <div className="text-sm">
                   <Link
                     href="/forgot-password"
-                    className="font-medium text-purple-600 hover:text-purple-500"
+                    className="font-medium text-[#8B5CF6] hover:text-[#B497FF]"
                   >
                     Forgot password?
                   </Link>
@@ -237,7 +237,7 @@ export default function Login() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#1C0233] text-[#FFFFFF] font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -272,10 +272,10 @@ export default function Login() {
 
               <div className="relative">
                 <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-gray-300"></div>
+                  <div className="w-full border-t border-[#D1D5DB]"></div>
                 </div>
                 <div className="relative flex justify-center text-sm">
-                  <span className="px-2 bg-white text-gray-500">
+                  <span className="px-2 bg-[#1C0233] text-[#D1D5DB]">
                     Or continue with
                   </span>
                 </div>
@@ -283,7 +283,7 @@ export default function Login() {
 
               <button
                 type="button"
-                className="w-full inline-flex justify-center items-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+                className="w-full inline-flex justify-center items-center py-2 px-4 border border-[#D1D5DB] rounded-lg shadow-sm bg-[#FFFFFF] text-sm font-medium text-[#1C0233] hover:bg-[#D1D5DB]"
                 onClick={() => {
                   // Handle Google login
                   window.location.href = "/api/auth/google";
@@ -316,11 +316,11 @@ export default function Login() {
             </form>
 
             <div className="mt-6 text-center">
-              <p className="text-sm text-gray-600">
-                Don't have an account?{" "}
+              <p className="text-sm text-[#D1D5DB]">
+                Don\'t have an account?{" "}
                 <Link
                   href="/register"
-                  className="font-medium text-purple-600 hover:text-purple-500"
+                  className="font-medium text-[#8B5CF6] hover:text-[#B497FF]"
                 >
                   Register here
                 </Link>

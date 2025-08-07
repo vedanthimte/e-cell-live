@@ -93,7 +93,7 @@ const PastEvents = () => {
   ];
 
   return (
-    <section className="w-full bg-[#020617] py-16 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[#0E001B] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -104,11 +104,11 @@ const PastEvents = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-white mb-4">Past Events</h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-[#D1D5DB] max-w-2xl mx-auto">
             A glimpse into what we've achieved together
           </p>
           <motion.div
-            className="w-20 h-1 bg-gradient-to-r from-[#8B5CF6] to-[#FCD34D] rounded-full mx-auto mt-6"
+            className="w-20 h-1 bg-gradient-to-r from-[#8B5CF6] to-[#D8AFFF] rounded-full mx-auto mt-6"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -117,7 +117,6 @@ const PastEvents = () => {
         </motion.div>
 
         {/* Category Filters */}
-        
 
         {/* Events Grid */}
         <motion.div
@@ -165,11 +164,11 @@ const PastEvents = () => {
                   </svg>
                   <span className="text-sm text-[#8B5CF6]">{event.date}</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold text-[#FFFFFF] mb-2">
                   {event.name}
                 </h3>
-                <p className="text-gray-300 text-sm mb-4">{event.summary}</p>
-                <button className="text-sm font-medium text-white px-4 py-2 rounded-full bg-[#8B5CF6]/80 hover:bg-[#8B5CF6] transition-colors border border-[#8B5CF6] hover:shadow-[0_0_15px_#8B5CF6]/50">
+                <p className="text-[#D1D5DB] text-sm mb-4">{event.summary}</p>
+                <button className="text-sm font-medium text-[#FFFFFF] px-4 py-2 rounded-full bg-[#8B5CF6]/80 hover:bg-[#8B5CF6] transition-colors border border-[#8B5CF6] hover:shadow-[0_0_15px_#8B5CF6]/50">
                   View Gallery
                 </button>
               </div>
@@ -178,88 +177,88 @@ const PastEvents = () => {
         </motion.div>
 
         {/* Event Detail Modal */}
-      {selectedEvent && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedEvent(null)}
-        >
+        {selectedEvent && (
           <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            onClick={(e) => e.stopPropagation()}
-            className="bg-[#1E293B] rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedEvent(null)}
           >
-            <div className="relative aspect-video">
-              <Image
-                src={selectedEvent.image}
-                alt={selectedEvent.name}
-                fill
-                className="object-cover"
-              />
-              <button
-                className="absolute top-4 right-4 bg-black/50 rounded-full p-2 hover:bg-black/80 transition-colors"
-                onClick={() => setSelectedEvent(null)}
-              >
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-[#1C0233] rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            >
+              <div className="relative aspect-video">
+                <Image
+                  src={selectedEvent.image}
+                  alt={selectedEvent.name}
+                  fill
+                  className="object-cover"
+                />
+                <button
+                  className="absolute top-4 right-4 bg-black/50 rounded-full p-2 hover:bg-black/80 transition-colors"
+                  onClick={() => setSelectedEvent(null)}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="p-8">
-              <div className="flex items-center gap-2 mb-4">
-                <svg
-                  className="w-5 h-5 text-[#8B5CF6]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                <span className="text-[#8B5CF6]">{selectedEvent.date}</span>
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-4">
-                {selectedEvent.name}
-              </h3>
-              <p className="text-gray-300 mb-6">{selectedEvent.summary}</p>
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-white">
-                  Event Highlights
-                </h4>
-                <ul className="list-disc list-inside text-gray-400 space-y-2">
-                  <li>Featured 10+ industry expert speakers</li>
-                  <li>200+ participants from across the region</li>
-                  <li>5 student startups received funding</li>
-                </ul>
-              </div>
-              <div className="mt-8 flex gap-4">
-                <button className="px-6 py-3 bg-[#8B5CF6] text-white rounded-full hover:bg-[#7C3AED] transition-colors">
-                  View Event Photos
-                </button>
-                <button className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-full hover:bg-[#8B5CF6]/10 transition-colors">
-                  See Similar Events
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
                 </button>
               </div>
-            </div>
+              <div className="p-8">
+                <div className="flex items-center gap-2 mb-4">
+                  <svg
+                    className="w-5 h-5 text-[#8B5CF6]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span className="text-[#8B5CF6]">{selectedEvent.date}</span>
+                </div>
+                <h3 className="text-2xl font-bold text-[#FFFFFF] mb-4">
+                  {selectedEvent.name}
+                </h3>
+                <p className="text-[#D1D5DB] mb-6">{selectedEvent.summary}</p>
+                <div className="space-y-4">
+                  <h4 className="text-lg font-semibold text-[#FFFFFF]">
+                    Event Highlights
+                  </h4>
+                  <ul className="list-disc list-inside text-[#D1D5DB] space-y-2">
+                    <li>Featured 10+ industry expert speakers</li>
+                    <li>200+ participants from across the region</li>
+                    <li>5 student startups received funding</li>
+                  </ul>
+                </div>
+                <div className="mt-8 flex gap-4">
+                  <button className="px-6 py-3 bg-[#8B5CF6] text-[#FFFFFF] rounded-full hover:bg-[#7C3AED] transition-colors">
+                    View Event Photos
+                  </button>
+                  <button className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-full hover:bg-[#8B5CF6]/10 transition-colors">
+                    See Similar Events
+                  </button>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      )}
+        )}
       </div>
     </section>
   );

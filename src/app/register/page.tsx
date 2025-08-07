@@ -97,12 +97,12 @@ export default function Register() {
         />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-[#0E001B] flex items-center justify-center p-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden"
+          className="w-full max-w-4xl bg-[#1C0233] rounded-xl shadow-lg overflow-hidden"
         >
           <div className="md:flex">
             {/* Left side - Form */}
@@ -115,10 +115,10 @@ export default function Register() {
                     className="h-12 mx-auto mb-4"
                   />
                 </Link>
-                <h1 className="text-3xl font-bold text-gray-800 mb-2">
+                <h1 className="text-3xl font-bold text-[#FFFFFF] mb-2">
                   Join E-Cell – Fuel Your Ideas!
                 </h1>
-                <p className="text-gray-600">
+                <p className="text-[#D1D5DB]">
                   Sign up to access events, resources, and the entrepreneurial
                   community.
                 </p>
@@ -128,7 +128,7 @@ export default function Register() {
                 <div>
                   <label
                     htmlFor="fullName"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-medium text-[#FFFFFF] mb-1"
                   >
                     Full Name
                   </label>
@@ -140,7 +140,7 @@ export default function Register() {
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
                       errors.fullName ? "border-red-500" : "border-gray-300"
-                    } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                    } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                     placeholder="Enter your full name"
                   />
                   {errors.fullName && (
@@ -153,7 +153,7 @@ export default function Register() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-medium text-[#FFFFFF] mb-1"
                   >
                     Email Address
                   </label>
@@ -165,7 +165,7 @@ export default function Register() {
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
                       errors.email ? "border-red-500" : "border-gray-300"
-                    } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                    } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                     placeholder="Enter your email"
                   />
                   {errors.email && (
@@ -176,7 +176,7 @@ export default function Register() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-medium text-[#FFFFFF] mb-1"
                   >
                     Phone Number (optional)
                   </label>
@@ -188,7 +188,7 @@ export default function Register() {
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
                       errors.phone ? "border-red-500" : "border-gray-300"
-                    } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                    } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                     placeholder="Enter your phone number"
                   />
                   {errors.phone && (
@@ -199,7 +199,7 @@ export default function Register() {
                 <div>
                   <label
                     htmlFor="institution"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-medium text-[#FFFFFF] mb-1"
                   >
                     College/Institution Name
                   </label>
@@ -211,7 +211,7 @@ export default function Register() {
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
                       errors.institution ? "border-red-500" : "border-gray-300"
-                    } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                    } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                     placeholder="Enter your institution name"
                   />
                   {errors.institution && (
@@ -224,7 +224,7 @@ export default function Register() {
                 <div>
                   <label
                     htmlFor="role"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-medium text-[#FFFFFF] mb-1"
                   >
                     Role
                   </label>
@@ -233,7 +233,7 @@ export default function Register() {
                     name="role"
                     value={formData.role}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                    className="w-full px-4 py-2 rounded-lg border border-[#D1D5DB] focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition"
                   >
                     <option value="participant">Participant</option>
                     <option value="volunteer">Volunteer</option>
@@ -244,7 +244,7 @@ export default function Register() {
                 <div>
                   <label
                     htmlFor="password"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-medium text-[#FFFFFF] mb-1"
                   >
                     Password
                   </label>
@@ -256,7 +256,7 @@ export default function Register() {
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
                       errors.password ? "border-red-500" : "border-gray-300"
-                    } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                    } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                     placeholder="Create a password"
                   />
                   {errors.password && (
@@ -264,7 +264,7 @@ export default function Register() {
                       {errors.password}
                     </p>
                   )}
-                  <p className="mt-1 text-xs text-gray-500">
+                  <p className="mt-1 text-xs text-[#D1D5DB]">
                     Password must be at least 8 characters
                   </p>
                 </div>
@@ -272,7 +272,7 @@ export default function Register() {
                 <div>
                   <label
                     htmlFor="confirmPassword"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-medium text-[#FFFFFF] mb-1"
                   >
                     Confirm Password
                   </label>
@@ -286,7 +286,7 @@ export default function Register() {
                       errors.confirmPassword
                         ? "border-red-500"
                         : "border-gray-300"
-                    } focus:ring-2 focus:ring-purple-500 focus:border-transparent transition`}
+                    } focus:ring-2 focus:ring-[#8B5CF6] focus:border-transparent transition`}
                     placeholder="Confirm your password"
                   />
                   {errors.confirmPassword && (
@@ -304,25 +304,25 @@ export default function Register() {
                       type="checkbox"
                       checked={formData.agreeTerms}
                       onChange={handleChange}
-                      className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                      className="w-4 h-4 text-[#8B5CF6] border-[#D1D5DB] rounded focus:ring-[#8B5CF6]"
                     />
                   </div>
                   <div className="ml-3 text-sm">
                     <label
                       htmlFor="agreeTerms"
-                      className="font-medium text-gray-700"
+                      className="font-medium text-[#FFFFFF]"
                     >
                       I agree to the{" "}
                       <a
                         href="/terms"
-                        className="text-purple-600 hover:text-purple-500"
+                        className="text-[#8B5CF6] hover:text-[#B497FF]"
                       >
                         Terms & Conditions
                       </a>{" "}
                       and{" "}
                       <a
                         href="/privacy"
-                        className="text-purple-600 hover:text-purple-500"
+                        className="text-[#8B5CF6] hover:text-[#B497FF]"
                       >
                         Privacy Policy
                       </a>
@@ -338,12 +338,12 @@ export default function Register() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#1C0233] text-[#FFFFFF] font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <>
                       <svg
-                        className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        className="animate-spin -ml-1 mr-3 h-5 w-5 text-[#FFFFFF]"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -371,11 +371,11 @@ export default function Register() {
               </form>
 
               <div className="mt-6 text-center">
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-[#D1D5DB]">
                   Already have an account?{" "}
                   <Link
                     href="/login"
-                    className="font-medium text-purple-600 hover:text-purple-500"
+                    className="font-medium text-[#8B5CF6] hover:text-[#B497FF]"
                   >
                     Login here
                   </Link>
