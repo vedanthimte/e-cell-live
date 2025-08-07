@@ -1,0 +1,38 @@
+:root {
+  --midnight-purple: #0e001b;
+  --royal-violet: #8b5cf6;
+  --lavender-glow: #b497ff;
+  --electric-white: #ffffff;
+  --cool-gray: #d1d5db;
+  --deep-indigo: #1c0233;
+  --neon-lilac: #d8afff;
+}
+
+/* Example usage in a component CSS file */
+body {
+  background: var(--midnight-purple);
+  color: var(--electric-white);
+}
+
+.button-primary {
+  background: var(--royal-violet);
+  color: var(--electric-white);
+}
+
+.button-primary:hover {
+  background: var(--neon-lilac);
+}
+
+.card {
+  background: var(--deep-indigo);
+  box-shadow: 0 4px 16px var(--lavender-glow);
+}
+
+.text-secondary {
+  color: var(--cool-gray);
+}
+
+.divider {
+  border-color: var(--lavender-glow);
+  opacity: 0.3;
+}
