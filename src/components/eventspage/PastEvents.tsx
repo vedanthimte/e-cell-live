@@ -83,7 +83,7 @@ const PastEvents = () => {
         >
           <h2 className="text-4xl font-bold text-white mb-4">Past Events</h2>
           <p className="text-lg text-[#D1D5DB] max-w-2xl mx-auto">
-            A glimpse into what we've achieved together
+            A glimpse into what we&apos;ve achieved together
           </p>
           <motion.div
             className="w-20 h-1 bg-gradient-to-r from-[#8B5CF6] to-[#D8AFFF] rounded-full mx-auto mt-6"
