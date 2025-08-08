@@ -5,6 +5,7 @@ import Image from "next/image";
 import recruitment from "./pics/recruitment.jpg";
 import pitchFest from "./pics/pitchFest.jpg";
 import illuminate from "./pics/illuminate.jpg";
+
 const PastEvents = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   type EventType = {
@@ -34,21 +35,12 @@ const PastEvents = () => {
   };
 
   const pastEvents = [
-    // {
-    //   id: 1,
-    //   name: "Founding Date",
-    //   date: "Aug 28, 2024",
-    //   summary:
-    //     "The official establishment of PRMIT&R E-Cell to cultivate an innovation-driven ecosystem on campus.",
-    //   image: "#",
-    //   category: "Foundation",
-    // },
     {
       id: 2,
       name: "RECRUITMENT'24",
       date: "Sep 5, 2024",
       summary:
-        "E-Cell PRMIT&R's first recruitment drive to build a passionate and dynamic team.",
+        "E-Cell PRMIT&amp;R&apos;s first recruitment drive to build a passionate and dynamic team.",
       image: recruitment,
       category: "Recruitment",
     },
@@ -77,11 +69,6 @@ const PastEvents = () => {
       ? pastEvents
       : pastEvents.filter((event) => event.category === activeFilter);
 
-  const categories = [
-    "All",
-    ...new Set(pastEvents.map((event) => event.category)),
-  ];
-
   return (
     <section className="w-full bg-[#0E001B] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -95,7 +82,7 @@ const PastEvents = () => {
         >
           <h2 className="text-4xl font-bold text-white mb-4">Past Events</h2>
           <p className="text-lg text-[#D1D5DB] max-w-2xl mx-auto">
-            A glimpse into what we've achieved together
+            A glimpse into what we&apos;ve achieved together
           </p>
           <motion.div
             className="w-20 h-1 bg-gradient-to-r from-[#8B5CF6] to-[#D8AFFF] rounded-full mx-auto mt-6"
@@ -105,8 +92,6 @@ const PastEvents = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           />
         </motion.div>
-
-        {/* Category Filters */}
 
         {/* Events Grid */}
         <motion.div
@@ -125,7 +110,7 @@ const PastEvents = () => {
               className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl hover:shadow-[#8B5CF6]/20 cursor-pointer"
               onClick={() => setSelectedEvent(event)}
             >
-              {/* Event Image with Overlay */}
+              {/* Event Image */}
               <div className="relative aspect-video">
                 <Image
                   src={event.image}
@@ -166,7 +151,7 @@ const PastEvents = () => {
           ))}
         </motion.div>
 
-        {/* Event Detail Modal */}
+        {/* Event Modal */}
         {selectedEvent && (
           <motion.div
             initial={{ opacity: 0 }}

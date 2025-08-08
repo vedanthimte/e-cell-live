@@ -1,17 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-// import TeamIllustration from "../public/team-illustration.png"; // Replace with your image
 
 const WhoWeAre = () => {
-  // Animation variants
   const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2 },
     },
   };
 
@@ -62,7 +58,7 @@ const WhoWeAre = () => {
             {/* Description */}
             <motion.div variants={item}>
               <p className="text-lg text-[#D1D5DB] mb-6 max-w-3xl">
-                E-Cell, PRMIT&R is a student-driven initiative committed to
+                E-Cell, PRMIT&amp;R is a student-driven initiative committed to
                 fostering entrepreneurial spirit and innovation among young
                 minds. We empower students to transform ideas into impactful
                 startups by providing mentorship, workshops, networking, and
@@ -70,8 +66,8 @@ const WhoWeAre = () => {
               </p>
               <p className="text-lg text-[#D1D5DB] mb-8 max-w-3xl">
                 We believe in action-oriented learning, startup culture, and
-                creating a future where students lead industries — not just work
-                for them.
+                creating a future where students lead industries &mdash; not
+                just work for them.
               </p>
             </motion.div>
 
@@ -81,7 +77,8 @@ const WhoWeAre = () => {
               className="relative pl-6 border-l-2 border-[#8B5CF6]"
             >
               <p className="text-[#D8AFFF] italic text-xl font-light">
-                "Where ideas take flight, and students lead the charge."
+                &quot;Where ideas take flight, and students lead the
+                charge.&quot;
               </p>
             </motion.div>
           </motion.div>
@@ -97,7 +94,7 @@ const WhoWeAre = () => {
           >
             <div className="relative aspect-square w-full max-w-xl mx-auto">
               <Image
-                // src={TeamIllustration}
+                src="/team-illustration.png"
                 alt="E-Cell team collaborating"
                 fill
                 className="object-contain"
@@ -105,9 +102,7 @@ const WhoWeAre = () => {
               {/* Floating elements */}
               <motion.div
                 className="absolute top-20 -left-4 w-8 h-8 rounded-full bg-[#8B5CF6] opacity-70"
-                animate={{
-                  y: [0, -15, 0],
-                }}
+                animate={{ y: [0, -15, 0] }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,
@@ -116,9 +111,7 @@ const WhoWeAre = () => {
               />
               <motion.div
                 className="absolute bottom-16 -right-4 w-6 h-6 rounded-full bg-[#D8AFFF] opacity-70"
-                animate={{
-                  y: [0, 15, 0],
-                }}
+                animate={{ y: [0, 15, 0] }}
                 transition={{
                   duration: 5,
                   repeat: Infinity,
