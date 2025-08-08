@@ -34,7 +34,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-screen w-full overflow-hidden"
+      className="relative py-25 w-full overflow-hidden"
       style={{ backgroundColor: COLORS.midnightPurple }}
     >
       {/* Background Glow Effects */}
@@ -111,9 +111,9 @@ const HeroSection = () => {
             variants={item}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
-            <Link href="/register" passHref>
+            <Link href="/events" passHref>
               <motion.a
-                className="px-8 py-3 text-white rounded-full font-medium shadow-lg transition-all duration-300 text-center"
+                className="px-8 py-3 text-white rounded-full font-medium shadow-lg transition-all duration-200 text-center"
                 style={{
                   background: `linear-gradient(to right, ${COLORS.royalViolet}, ${COLORS.deepIndigo})`,
                   boxShadow: `0 0 0 ${COLORS.neonLilac}40`,
@@ -121,23 +121,6 @@ const HeroSection = () => {
                 whileHover={{
                   scale: 1.05,
                   boxShadow: `0 0 20px ${COLORS.neonLilac}80`,
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Join the Community
-              </motion.a>
-            </Link>
-            <Link href="/events" passHref>
-              <motion.a
-                className="px-8 py-3 border-2 rounded-full font-medium transition-all duration-300 text-center"
-                style={{
-                  borderColor: COLORS.royalViolet,
-                  color: COLORS.coolGray,
-                }}
-                whileHover={{
-                  scale: 1.05,
-                  color: COLORS.electricWhite,
-                  backgroundColor: `${COLORS.royalViolet}10`,
                 }}
                 whileTap={{ scale: 0.95 }}
               >

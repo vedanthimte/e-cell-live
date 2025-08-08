@@ -21,63 +21,54 @@ const CoreTeam = () => {
 
   const teamMembers = [
     {
-      name: "Rahul Sharma",
-      position: "President",
-      image: "/profile-placeholder.jpg",
-      socials: {
-        linkedin: "#",
-        instagram: "#",
-      },
+    name: "MAYUR DOIJOD",
+    position: "President",
+    image: "/profile-placeholder.jpg",
+    socials: {
+      linkedin: "https://linkedin.com/in/mayur-doijod-515514290",
+      instagram: "https://www.instagram.com/mayur.doijod?igsh=MXYwYTVocWIyaGZtZQ==",
     },
+  },
+  {
+    name: "PRIYANSHU THAKARE",
+    position: "Vice-President",
+    image: "/profile-placeholder.jpg",
+    socials: {
+      linkedin: "https://linkedin.com/in/priyanshu-thakare",
+      instagram: "https://www.instagram.com/priyaannsshhu?igsh=Z3loOWlrazJ5NmJ5",
+    },
+  },
+  {
+    name: "JAY NAGPURE",
+    position: "Operations Head",
+    image: "/profile-placeholder.jpg",
+    socials: {
+      linkedin: "https://linkedin.com/in/jay-nagpure-7bb8492a0",
+      instagram: "https://www.instagram.com/jayynagpure17?igsh=azhieTlkNjVycXVs",
+    },
+  },
+  {
+    name: "PRATHMESH ARU",
+    position: "General Secretary",
+    image: "/profile-placeholder.jpg",
+    socials: {
+      linkedin: "https://linkedin.com/in/prathmesh-aru-437b97215",
+      instagram: "https://www.instagram.com/_prathm_02_?igsh=MXRsenlkbWIxajYybQ==",
+    },
+  },
     {
-      name: "Priya Patel",
-      position: "Vice President",
+      name: "OM KHARAD",
+      position: "Student Advisor",
       image: "/profile-placeholder.jpg",
       socials: {
-        linkedin: "#",
-        instagram: "#",
+        linkedin: "https://linkedin.com/in/omkharad10x06",
+        instagram: "https://www.instagram.com/omkharad10x?igsh=MWtyMzBrcGc0cG5kNA==",
       },
-    },
-    {
-      name: "Arjun Singh",
-      position: "Tech Head",
-      image: "/profile-placeholder.jpg",
-      socials: {
-        linkedin: "#",
-        instagram: "#",
-      },
-    },
-    {
-      name: "Neha Gupta",
-      position: "Events Lead",
-      image: "/profile-placeholder.jpg",
-      socials: {
-        linkedin: "#",
-        instagram: "#",
-      },
-    },
-    {
-      name: "Vikram Joshi",
-      position: "Marketing Head",
-      image: "/profile-placeholder.jpg",
-      socials: {
-        linkedin: "#",
-        instagram: "#",
-      },
-    },
-    {
-      name: "Ananya Reddy",
-      position: "Design Lead",
-      image: "/profile-placeholder.jpg",
-      socials: {
-        linkedin: "#",
-        instagram: "#",
-      },
-    },
+    }
   ];
 
   return (
-    <section className="w-full bg-[#0F172A] py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[#0E001B] py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -90,7 +81,7 @@ const CoreTeam = () => {
           <h2 className="text-3xl sm:text-4xl font-semibold text-white mb-4">
             Meet Our Core Team
           </h2>
-          <p className="text-lg text-[#E2E8F0] max-w-2xl mx-auto">
+          <p className="text-lg text-[#D1D5DB] max-w-2xl mx-auto">
             Dedicated minds behind E-Cell's vision
           </p>
           <motion.div
@@ -101,21 +92,20 @@ const CoreTeam = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           />
         </motion.div>
-
         {/* Team Grid */}
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
               variants={item}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="bg-[#1E293B] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-[#8B5CF6]/20 transition-all duration-300"
+              className="bg-[#1C0233] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-[#8B5CF6]/20 transition-all duration-300"
             >
               <div className="relative h-64 w-full">
                 <Image
@@ -124,11 +114,11 @@ const CoreTeam = () => {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0E001B] via-transparent to-transparent" />
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-[#FFFFFF]">
                   {member.name}
                 </h3>
                 <p className="text-[#8B5CF6] mb-4">{member.position}</p>
@@ -138,7 +128,7 @@ const CoreTeam = () => {
                     href={member.socials.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#E2E8F0] hover:text-[#8B5CF6] transition-colors duration-300"
+                    className="text-[#D1D5DB] hover:text-[#8B5CF6] transition-colors duration-300"
                   >
                     <svg
                       className="w-5 h-5"
@@ -152,7 +142,7 @@ const CoreTeam = () => {
                     href={member.socials.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#E2E8F0] hover:text-[#8B5CF6] transition-colors duration-300"
+                    className="text-[#D1D5DB] hover:text-[#8B5CF6] transition-colors duration-300"
                   >
                     <svg
                       className="w-5 h-5"

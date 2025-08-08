@@ -80,11 +80,11 @@ export default function Navbar() {
             <motion.img
               src={Logo.src}
               alt="E-Cell Logo"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className="group-hover:rotate-6 transition-transform duration-300"
             />
-            <div className="hidden md:block ml-3">
+            <div className="md:block ml-3">
               <motion.h1
                 className="text-white font-bold text-lg"
                 whileHover={{ x: 2 }}
@@ -142,89 +142,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* CTA Dropdown */}
-          <div className="hidden md:block relative" ref={dropdownRef}>
-            <motion.button
-              className="px-4 py-1.5 lg:px-6 lg:py-2 text-white rounded-full border shadow-lg relative overflow-hidden focus:outline-none focus:ring-2 transition-all duration-200"
-              whileHover={{
-                boxShadow: `0 0 15px ${colors.neonLilac}50`,
-                scale: 1.05,
-              }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.2 }}
-              onClick={() => setIsDropdownOpen((v) => !v)}
-              aria-expanded={isDropdownOpen}
-              aria-label="Join Us dropdown"
-              tabIndex={0}
-              style={{
-                background: `linear-gradient(to right, ${colors.royalViolet}, ${colors.deepIndigo})`,
-                borderColor: `${colors.lavenderGlow}50`,
-                boxShadow: `0 0 0 ${colors.neonLilac}30`,
-              }}
-            >
-              <span className="relative z-10 text-sm lg:text-base font-semibold">
-                Join Us
-              </span>
-              <motion.span
-                className="absolute inset-0 opacity-0"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: isDropdownOpen ? 0.2 : 0 }}
-                transition={{ duration: 0.3 }}
-                style={{
-                  background: `linear-gradient(to right, ${colors.neonLilac}, ${colors.lavenderGlow})`,
-                }}
-              />
-            </motion.button>
-            <AnimatePresence>
-              {isDropdownOpen && (
-                <motion.div
-                  variants={dropdownVariants}
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
-                  transition={{ type: "spring", damping: 20, stiffness: 300 }}
-                  className="absolute right-0 mt-3 w-48 rounded-lg shadow-xl backdrop-blur-lg border z-50 overflow-hidden"
-                  style={{
-                    backgroundColor: `${colors.midnightPurple}EE`,
-                    borderColor: `${colors.lavenderGlow}30`,
-                  }}
-                >
-                  <div className="py-1">
-                    <Link href="/register" passHref>
-                      <motion.a
-                        className="block px-4 py-2.5 text-sm font-medium transition-colors"
-                        whileHover={{
-                          backgroundColor: `${colors.royalViolet}26`,
-                          x: 4,
-                        }}
-                        whileTap={{ scale: 0.98 }}
-                        onClick={() => setIsDropdownOpen(false)}
-                        tabIndex={0}
-                        style={{ color: colors.coolGray }}
-                      >
-                        Register
-                      </motion.a>
-                    </Link>
-                    <Link href="/login" passHref>
-                      <motion.a
-                        className="block px-4 py-2.5 text-sm font-medium transition-colors"
-                        whileHover={{
-                          backgroundColor: `${colors.royalViolet}26`,
-                          x: 4,
-                        }}
-                        whileTap={{ scale: 0.98 }}
-                        onClick={() => setIsDropdownOpen(false)}
-                        tabIndex={0}
-                        style={{ color: colors.coolGray }}
-                      >
-                        Login
-                      </motion.a>
-                    </Link>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+          
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
@@ -304,36 +222,7 @@ export default function Navbar() {
                 className="pt-3 pb-1 border-t mx-3"
                 style={{ borderColor: `${colors.lavenderGlow}30` }}
               >
-                <Link href="/register" passHref>
-                  <motion.a
-                    className="block px-4 py-3 rounded-lg text-base font-medium mx-1 mt-2 text-center transition-colors"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => setIsMenuOpen(false)}
-                    tabIndex={0}
-                    style={{
-                      backgroundColor: colors.royalViolet,
-                      color: colors.electricWhite,
-                    }}
-                  >
-                    Register
-                  </motion.a>
-                </Link>
-                <Link href="/login" passHref>
-                  <motion.a
-                    className="block px-4 py-3 rounded-lg text-base font-medium mx-1 mt-3 text-center transition-colors"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => setIsMenuOpen(false)}
-                    tabIndex={0}
-                    style={{
-                      color: colors.royalViolet,
-                      borderColor: colors.royalViolet,
-                    }}
-                  >
-                    Login
-                  </motion.a>
-                </Link>
+                
               </div>
             </div>
           </motion.div>

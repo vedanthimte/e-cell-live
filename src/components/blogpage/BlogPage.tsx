@@ -125,7 +125,7 @@ const BlogPage = () => {
             transition={{ delay: 0.4 }}
           >
             <a
-              href="https://linkedin.com/company/ecell-prmitr"
+              href="https://www.linkedin.com/company/e-cell-prmit-r/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-full hover:bg-[#8B5CF6] hover:text-white transition-colors hover:shadow-[0_0_15px_#8B5CF6]/30"
