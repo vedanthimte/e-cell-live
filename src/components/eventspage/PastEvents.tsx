@@ -2,7 +2,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
-
+import recruitment from "./pics/recruitment.jpg";
+import pitchFest from "./pics/pitchFest.jpg";
+import illuminate from "./pics/illuminate.jpg";
 const PastEvents = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   type EventType = {
@@ -32,52 +34,40 @@ const PastEvents = () => {
   };
 
   const pastEvents = [
-    {
-      id: 1,
-      name: "Startup Conclave 2023",
-      date: "June 2023",
-      summary: "Annual flagship event featuring 50+ startups and investors",
-      image: "/event1.jpg",
-      category: "Conference",
-    },
+    // {
+    //   id: 1,
+    //   name: "Founding Date",
+    //   date: "Aug 28, 2024",
+    //   summary:
+    //     "The official establishment of PRMIT&R E-Cell to cultivate an innovation-driven ecosystem on campus.",
+    //   image: "#",
+    //   category: "Foundation",
+    // },
     {
       id: 2,
-      name: "Hacknovate 2.0",
-      date: "March 2023",
-      summary: "36-hour hackathon with 200+ participants",
-      image: "/event2.jpg",
-      category: "Hackathon",
+      name: "RECRUITMENT'24",
+      date: "Sep 5, 2024",
+      summary:
+        "E-Cell PRMIT&R's first recruitment drive to build a passionate and dynamic team.",
+      image: recruitment,
+      category: "Recruitment",
     },
     {
       id: 3,
-      name: "Founder's Fireside",
-      date: "January 2023",
-      summary: "Intimate conversations with successful entrepreneurs",
-      image: "/event3.jpg",
-      category: "Workshop",
-    },
-    {
-      id: 4,
-      name: "Investor Pitch Day",
-      date: "November 2022",
-      summary: "Student startups pitched to angel investors",
-      image: "/event4.jpg",
-      category: "Pitching",
-    },
-    {
-      id: 5,
-      name: "Ideathon 2022",
-      date: "September 2022",
-      summary: "Idea validation competition with 100+ entries",
-      image: "/event5.jpg",
+      name: "Pitch Fest'24",
+      date: "Oct 4, 2024",
+      summary:
+        "Flagship entrepreneurship event where students present innovative ideas to expert judges.",
+      image: pitchFest,
       category: "Competition",
     },
     {
-      id: 6,
-      name: "Startup 101 Workshop",
-      date: "August 2022",
-      summary: "Beginner's guide to launching your venture",
-      image: "/event6.jpg",
+      id: 4,
+      name: "ILLUMINATE'24",
+      date: "Dec 18, 2024",
+      summary:
+        "Entrepreneurship workshop by IIT Bombay experts covering business models, marketing, and finance.",
+      image: illuminate,
       category: "Workshop",
     },
   ];

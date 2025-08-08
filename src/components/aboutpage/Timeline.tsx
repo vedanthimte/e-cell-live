@@ -7,34 +7,32 @@ const Timeline = () => {
 
   const events = [
     {
-      date: "Aug 15, 2023",
-      title: "Startup 101 Workshop",
-      description: "Learn the fundamentals of launching your startup",
-      type: "Workshop",
+      date: "Aug 28, 2024",
+      title: "Founding Date",
+      description:
+        "Founded on August 28, 2024, the Entrepreneurship Cell of PRMIT&R was established to cultivate an innovation-driven ecosystem on campus. Since our inception, we have been dedicated to nurturing entrepreneurial talent, fostering creative thinking, and empowering students to transform their ideas into viable business ventures.",
+      type: "Foundation",
     },
     {
-      date: "Sep 20, 2023",
-      title: "Ideathon 2.0",
-      description: "24-hour idea generation marathon",
-      type: "Hackathon",
+      date: "Sep 5, 2024",
+      title: "RECRUITMENT'24",
+      description:
+        "First Recruitment Drive - September 5, 2024. Just one week after our founding, E-Cell PRMIT&R conducted its inaugural recruitment drive on September 5, 2024. This milestone event marked the beginning of building our dynamic team of passionate students committed to entrepreneurship and innovation. The recruitment brought together enthusiastic minds ready to contribute to our mission of fostering startup culture and entrepreneurial excellence on campus.",
+      type: "Recruitment",
     },
     {
-      date: "Nov 5, 2023",
-      title: "Intern Fair 2023",
-      description: "Connect with top startups for internships",
-      type: "Networking",
-    },
-    {
-      date: "Jan 10, 2024",
-      title: "Pitch Tank",
-      description: "Pitch your ideas to industry experts",
+      date: "Oct 4, 2024",
+      title: "Pitch Fest'24",
+      description:
+        "Pitch-Fest is PRMIT&R E-Cell's flagship entrepreneurship event that empowers students to showcase innovative business ideas and startup concepts. Participants present their ventures to expert judges including faculty, industry professionals, and successful entrepreneurs, creating a dynamic platform for fostering entrepreneurial thinking and innovation on campus.",
       type: "Competition",
     },
     {
-      date: "Mar 14, 2024",
-      title: "Investor Connect",
-      description: "Meet potential investors for your venture",
-      type: "Networking",
+      date: "Dec 18, 2024",
+      title: "ILLUMINATE'24",
+      description:
+        "ILLUMINATE is an intensive 5-6 hour Entrepreneurship Workshop featuring expert speaker sessions, case study training, and hands-on business model development. Led by seasoned entrepreneurs and experts from IIT Bombay, this comprehensive workshop covers the fundamentals of entrepreneurship, business model creation, marketing strategies, and financial planning to equip students with essential startup knowledge.",
+      type: "Workshop",
     },
   ];
 
