@@ -8,9 +8,7 @@ const UpcomingEvents = () => {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2 },
     },
   };
 
@@ -29,16 +27,17 @@ const UpcomingEvents = () => {
     },
     {
       id: 2,
-      name: "PitchFest'25 ",
+      name: "PitchFest'25",
       date: "Aug 19, 2025",
-      description: "Showcase your startup ideas and get feedback from industry experts.",
+      description:
+        "Showcase your startup ideas and get feedback from industry experts.",
       cta: "Coming soon",
     },
   ];
 
   return (
     <section className="w-full bg-[#0E001B] py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl pt-15 mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +69,7 @@ const UpcomingEvents = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative"
         >
-          {/* Timeline Line (Desktop Only) */}
+          {/* Timeline Line (Desktop) */}
           <motion.div
             className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#8B5CF6] to-transparent"
             initial={{ scaleX: 0 }}
@@ -79,7 +78,7 @@ const UpcomingEvents = () => {
             transition={{ duration: 1 }}
           />
 
-          {events.map((event, index) => (
+          {events.map((event) => (
             <motion.div
               key={event.id}
               variants={item}
@@ -91,6 +90,7 @@ const UpcomingEvents = () => {
               <div className="hidden lg:block absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-[#8B5CF6] border-2 border-[#D8AFFF]"></div>
 
               <div className="p-6">
+                {/* Event Header */}
                 <div className="flex items-start mb-4">
                   <div className="bg-[#8B5CF6]/10 p-2 rounded-lg mr-4">
                     <svg
@@ -115,20 +115,26 @@ const UpcomingEvents = () => {
                   </div>
                 </div>
 
+                {/* Description */}
                 <p className="text-[#D1D5DB] mb-6">{event.description}</p>
 
-                <Link
-                  href="/registerform"
-                  className="inline-block px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#1C0233] text-[#FFFFFF] hover:shadow-[0_0_15px_#8B5CF6]/50 transition-all duration-300"
-                >
-                  {event.cta}
-                </Link>
+                {/* CTA Button / Static Text */}
+                {event.cta === "Register" ? (
+                  <Link
+                    href="/registerform"
+                    className="inline-block px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#1C0233] text-[#FFFFFF] hover:shadow-[0_0_15px_#8B5CF6]/50 transition-all duration-300"
+                  >
+                    {event.cta}
+                  </Link>
+                ) : (
+                  <span className="inline-block px-5 py-2 text-sm font-medium rounded-full bg-gray-600 text-white opacity-70 cursor-not-allowed">
+                    {event.cta}
+                  </span>
+                )}
               </div>
             </motion.div>
           ))}
         </motion.div>
-
-        {/* View All Button */}
       </div>
     </section>
   );
