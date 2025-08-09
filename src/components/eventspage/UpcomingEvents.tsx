@@ -118,7 +118,7 @@ const UpcomingEvents = () => {
                 <p className="text-[#D1D5DB] mb-6">{event.description}</p>
 
                 <Link
-                  href="#"
+                  href="/registerform"
                   className="inline-block px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#1C0233] text-[#FFFFFF] hover:shadow-[0_0_15px_#8B5CF6]/50 transition-all duration-300"
                 >
                   {event.cta}
