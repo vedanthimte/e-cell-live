@@ -9,8 +9,8 @@ export default function Register() {
             src="https://docs.google.com/forms/d/e/1FAIpQLSegyCTCrP-V_bPBjkD5cGMeost4XZ9BnV0aFLbHXV7ntWYx2Q/viewform?embedded=true"
             className="absolute top-0 left-0 w-full h-full rounded-lg"
             frameBorder="0"
-            marginHeight="0"
-            marginWidth="0"
+            marginHeight={0}
+            marginWidth={0}
           >
             Loading…
           </iframe>
