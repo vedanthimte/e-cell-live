@@ -117,9 +117,9 @@ const PastEvents = () => {
                   src={event.image}
                   alt={event.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 blur-sm"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/60 pointer-events-none" />
               </div>
 
               {/* Event Info */}
@@ -213,24 +213,6 @@ const PastEvents = () => {
                   {selectedEvent.name}
                 </h3>
                 <p className="text-[#D1D5DB] mb-6">{selectedEvent.summary}</p>
-                <div className="space-y-4">
-                  <h4 className="text-lg font-semibold text-[#FFFFFF]">
-                    Event Highlights
-                  </h4>
-                  <ul className="list-disc list-inside text-[#D1D5DB] space-y-2">
-                    <li>Featured 10+ industry expert speakers</li>
-                    <li>200+ participants from across the region</li>
-                    <li>5 student startups received funding</li>
-                  </ul>
-                </div>
-                <div className="mt-8 flex gap-4">
-                  <button className="px-6 py-3 bg-[#8B5CF6] text-[#FFFFFF] rounded-full hover:bg-[#7C3AED] transition-colors">
-                    View Event Photos
-                  </button>
-                  <button className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-full hover:bg-[#8B5CF6]/10 transition-colors">
-                    See Similar Events
-                  </button>
-                </div>
               </div>
             </motion.div>
           </motion.div>
