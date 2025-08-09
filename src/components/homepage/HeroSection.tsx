@@ -102,8 +102,8 @@ const HeroSection = () => {
             className="text-lg max-w-lg mx-auto lg:mx-0 mb-10"
             style={{ color: COLORS.coolGray }}
           >
-            E-Cell, PRMIT&R is a student-run platform fostering innovation,
-            startups, and a future driven by young entrepreneurs.
+            E-Cell, PRMIT&R is a student-run institutional club established to
+            support student-led startups and promote entrepreneurship on campus.
           </motion.p>
 
           {/* CTA Buttons */}

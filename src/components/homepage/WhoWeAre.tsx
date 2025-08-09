@@ -58,16 +58,23 @@ const WhoWeAre = () => {
             {/* Description */}
             <motion.div variants={item}>
               <p className="text-lg text-[#D1D5DB] mb-6 max-w-3xl">
-                E-Cell, PRMIT&amp;R is a student-driven initiative committed to
-                fostering entrepreneurial spirit and innovation among young
-                minds. We empower students to transform ideas into impactful
-                startups by providing mentorship, workshops, networking, and
-                real-world exposure.
+                E-Cell, PRMIT&amp;R is built by students, for students. We exist
+                to back ideas, push boundaries, and turn sparks of inspiration
+                into startups that matter.
               </p>
               <p className="text-lg text-[#D1D5DB] mb-8 max-w-3xl">
-                We believe in action-oriented learning, startup culture, and
-                creating a future where students lead industries &mdash; not
-                just work for them.
+                Here, it&apos;s not just about learning entrepreneurship,
+                it&apos;s about living it.
+              </p>
+              <p className="text-lg text-[#D1D5DB] mb-8 max-w-3xl">
+                We run workshops, connect you with mentors, open doors to
+                networks, and put you in situations where you have to think,
+                build, and lead.
+              </p>
+              <p className="text-lg text-[#D1D5DB] mb-8 max-w-3xl">
+                This is a space where action matters more than talk, and where
+                students aren&apos;t waiting for the future, they&apos;re
+                creating it.
               </p>
             </motion.div>
 
@@ -77,8 +84,7 @@ const WhoWeAre = () => {
               className="relative pl-6 border-l-2 border-[#8B5CF6]"
             >
               <p className="text-[#D8AFFF] italic text-xl font-light">
-                &quot;Where ideas take flight, and students lead the
-                charge.&quot;
+                &quot;Built by dreamers, driven by doers.&quot;
               </p>
             </motion.div>
           </motion.div>

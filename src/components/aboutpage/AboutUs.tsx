@@ -100,19 +100,19 @@ const AboutUs = () => {
           >
             <div className="space-y-6">
               <p className="text-lg text-[#D1D5DB]">
-                E-Cell, PRMIT&R is a vibrant community of innovators,
-                visionaries, and change-makers. We aim to cultivate
-                entrepreneurial thinking among students by offering hands-on
-                learning, idea incubation, and exposure to real-world startup
-                ecosystems.
+                E-Cell, PRMIT&R is where ideas turn into action. We&apos;re a
+                group of students who believe in creating, building, and making
+                things happen. Our focus is on sparking entrepreneurial thinking
+                through hands-on work, idea incubation, and real exposure to the
+                startup world.
               </p>
               <p className="text-lg text-[#D1D5DB]">
-                We organize hackathons, workshops, mentorship sessions, and
-                startup showcases — equipping our members to lead the industries
-                of tomorrow.
+                From Competitions to workshops, mentorship to startup showcases,
+                we create opportunities for our students to learn, grow, and
+                lead.
               </p>
               <p className="text-lg text-[#D1D5DB] font-medium">
-                Join us in redefining possibilities — where every student is a
+                Here, every student isn&apos;t just a learner, they&apos;re a
                 potential founder.
               </p>
             </div>
