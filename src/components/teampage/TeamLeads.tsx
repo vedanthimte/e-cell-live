@@ -8,6 +8,7 @@ import tannay from "../teampics/tannay.jpg";
 import rutuja from "../teampics/rutuja.jpg";
 import mahesh from "../teampics/mahesh.jpg";
 import satwik from "../teampics/satwik.jpg";
+import rutvik from "../teampics/rutvik.jpg";
 
 
 const TeamLeads = () => {
@@ -71,7 +72,7 @@ const TeamLeads = () => {
     {
       name: "RUTVIK BELE",
       position: "Events Head",
-      image: "/profile-placeholder.jpg",
+      image: rutvik,
       socials: {
         linkedin: "https://linkedin.com/in/rutvik-bele-559b24290",
         instagram:

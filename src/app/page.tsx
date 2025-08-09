@@ -11,7 +11,7 @@ function Home() {
       <HeroSection />
       <WhoWeAre />
       <UpcomingEvents />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </div>
   )
 }

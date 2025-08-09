@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import teamImage from "./pic/team.jpg"; // Adjust the path as necessary
 
 const WhoWeAre = () => {
   const container = {
@@ -81,7 +82,7 @@ const WhoWeAre = () => {
             {/* Quote */}
             <motion.div
               variants={item}
-              className="relative pl-6 border-l-2 border-[#8B5CF6]"
+              className="relative pl-2 border-l-2 border-[#8B5CF6]"
             >
               <p className="text-[#D8AFFF] italic text-xl font-light">
                 &quot;Built by dreamers, driven by doers.&quot;
@@ -100,7 +101,7 @@ const WhoWeAre = () => {
           >
             <div className="relative aspect-square w-full max-w-xl mx-auto">
               <Image
-                src="/team-illustration.png"
+                src={teamImage}
                 alt="E-Cell team collaborating"
                 fill
                 className="object-contain"

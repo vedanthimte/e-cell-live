@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-// import TeamPhoto from "../public/team-photo.jpg"; // Replace with your image
-// import InnovationIllustration from "../public/innovation-illustration.jpg"; // Replace with your image
+import TeamPhoto from "./pic/left.png"; // Replace with your image
+import InnovationIllustration from "./pic/right.jpg"; // Replace with your image
 
 const AboutUs = () => {
   // Animation variants
@@ -68,7 +68,7 @@ const AboutUs = () => {
           >
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-xl overflow-hidden border border-[#8B5CF6]/30 group">
               <Image
-                src=""
+                src={TeamPhoto}
                 alt="E-Cell team working together"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -125,7 +125,7 @@ const AboutUs = () => {
           >
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-xl overflow-hidden border border-[#8B5CF6]/30 group">
               <Image
-                src=""
+                src={InnovationIllustration}
                 alt="Innovation and startup culture"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

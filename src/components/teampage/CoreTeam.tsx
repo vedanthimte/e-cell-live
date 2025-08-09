@@ -79,7 +79,7 @@ const CoreTeam = () => {
 
   return (
     <section className="w-full bg-[#0E001B] py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mt-16 mx-auto">
+      <div className="max-w-7xl mt-10 mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

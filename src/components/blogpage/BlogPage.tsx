@@ -44,12 +44,12 @@ const BlogPage = () => {
       : blogPosts.filter((post) => post.category === activeCategory);
 
   return (
-    <div className="min-h-screen pt-15 bg-[#0E001B]">
+    <div className="min-h-screen pt-6 bg-[#0E001B]">
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#8B5CF6]/10 to-transparent">
         <div className="max-w-7xl mx-auto text-center">
           <motion.h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 font-serif"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -127,7 +127,7 @@ const BlogPage = () => {
                   <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-[#8B5CF6]/20 text-[#8B5CF6] mb-3">
                     {post.category}
                   </span>
-                  <h3 className="text-xl font-bold text-[#FFFFFF] mb-2 font-serif">
+                  <h3 className="text-xl font-bold text-[#FFFFFF] mb-2">
                     {post.title}
                   </h3>
                   <p className="text-[#D1D5DB] mb-4">{post.excerpt}</p>
