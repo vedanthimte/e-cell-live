@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import banner1 from "./banner/id1.jpg";
 
 const BlogPage = () => {
   // Animation variants
@@ -28,8 +29,8 @@ const BlogPage = () => {
         "How student entrepreneurs are building ventures while balancing academics - insights from our incubator program",
       date: "August 02, 2025",
       author: "E-Cell ",
-      image: "/blog1.jpg",
-      link: "https://www.linkedin.com/posts/e-cell-prmit-r_can-a-college-idea-ever-become-a-million-dollar-activity-7355146182228144128-7oAV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD6AprIBorGuLjbC54UbRA2E5USMn0YAVPU ",
+      image: banner1,
+      link: "https://www.linkedin.com/posts/e-cell-prmit-r_can-a-college-idea-ever-become-a-million-dollar-activity-7355146182228144128-7oAV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD6AprIBorGuLjbC54UbRA2E5USMn0YAVPU",
       category: "Stories",
     },
   ];

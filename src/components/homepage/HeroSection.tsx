@@ -83,7 +83,7 @@ const HeroSection = () => {
                 backgroundImage: `linear-gradient(to right, ${COLORS.electricWhite}, ${COLORS.neonLilac})`,
               }}
             >
-              Igniting Innovation.
+              Empowering Student
             </span>
             <br />
             <span
@@ -92,7 +92,7 @@ const HeroSection = () => {
                 backgroundImage: `linear-gradient(to right, ${COLORS.neonLilac}, ${COLORS.electricWhite})`,
               }}
             >
-              Inspiring Entrepreneurs.
+              Entrepreneurs.
             </span>
           </motion.h1>
 
