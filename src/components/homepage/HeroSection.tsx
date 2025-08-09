@@ -34,7 +34,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative py-25 w-full overflow-hidden"
+      className="relative py-35 w-full overflow-hidden"
       style={{ backgroundColor: COLORS.midnightPurple }}
     >
       {/* Background Glow Effects */}

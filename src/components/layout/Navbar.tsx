@@ -71,11 +71,11 @@ export default function Navbar() {
           <motion.img
             src={Logo.src}
             alt="E-Cell Logo"
-            width={45}
-            height={45}
+            width={50}
+            height={50}
             className="group-hover:rotate-6 transition-transform duration-300"
           />
-          <div className="ml-3 hidden sm:block">
+          <div className="ml-2 mb-2 sm:block">
             <motion.h1
               className="text-white font-bold text-lg"
               whileHover={{ x: 2 }}
@@ -87,7 +87,7 @@ export default function Navbar() {
               </span>
             </motion.h1>
             <motion.p
-              className="text-xs mt-0.5"
+              className="hidden md:inline text-sm"
               whileHover={{ x: 2 }}
               style={{ color: colors.neonLilac }}
             >

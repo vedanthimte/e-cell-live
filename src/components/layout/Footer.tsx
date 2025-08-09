@@ -141,7 +141,7 @@ const Footer = () => {
               </li>
               <li>
                 <motion.a
-                  href="tel:+919876543210"
+                  href="tel:+91 90229 27354"
                   className="text-sm transition-colors duration-300"
                   style={{ color: COLORS.coolGray }}
                   whileHover={{
@@ -149,7 +149,20 @@ const Footer = () => {
                     color: COLORS.neonLilac,
                   }}
                 >
-                  📞 +91 98765 43210
+                  📞 +91 90229 27354
+                </motion.a>
+              </li>
+              <li>
+                <motion.a
+                  href="tel:+91 74991 18495"
+                  className="text-sm transition-colors duration-300"
+                  style={{ color: COLORS.coolGray }}
+                  whileHover={{
+                    x: 4,
+                    color: COLORS.neonLilac,
+                  }}
+                >
+                  📞 +91 74991 18495
                 </motion.a>
               </li>
             </ul>
