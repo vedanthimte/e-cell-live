@@ -22,7 +22,7 @@ const AboutUs = () => {
   };
 
   return (
-    <section className="relative w-full bg-[#0E001B] py-16 sm:py-24 overflow-hidden">
+    <section className="relative w-full pt-30 bg-[#0E001B] py-16 sm:py-24 overflow-hidden">
       {/* Background Glow Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-[#8B5CF6] opacity-10 blur-3xl"></div>

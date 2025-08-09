@@ -23,68 +23,13 @@ const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "The Student Startup Mindset: Lessons from Campus Founders",
+      title: "Can a college idea ever become a million-dollar company?",
       excerpt:
         "How student entrepreneurs are building ventures while balancing academics - insights from our incubator program",
-      date: "May 15, 2023",
-      author: "Rahul Sharma",
-      image: "/blog1.jpg",
-      link: "https://linkedin.com/company/ecell-prmitr/posts/123",
-      category: "Startups",
-    },
-    {
-      id: 2,
-      title: "Why Hackathons Matter More Than You Think",
-      excerpt:
-        "Beyond coding marathons - how hackathons build essential entrepreneurial skills",
-      date: "April 2, 2023",
-      author: "Neha Patel",
-      image: "/blog2.jpg",
-      link: "https://linkedin.com/company/ecell-prmitr/posts/456",
-      category: "Events",
-    },
-    {
-      id: 3,
-      title: "The Future of EdTech: Student Perspectives",
-      excerpt:
-        "How emerging technologies will transform education - views from our campus innovation survey",
-      date: "March 18, 2023",
-      author: "Arjun Singh",
-      image: "/blog3.jpg",
-      link: "https://linkedin.com/company/ecell-prmitr/posts/789",
-      category: "Tech",
-    },
-    {
-      id: 4,
-      title: "Building an Entrepreneurial Culture on Campus",
-      excerpt:
-        "5 initiatives that helped us foster innovation among 2000+ students this year",
-      date: "February 5, 2023",
+      date: "August 02, 2025",
       author: "E-Cell Team",
-      image: "/blog4.jpg",
-      link: "https://linkedin.com/company/ecell-prmitr/posts/101",
-      category: "Team",
-    },
-    {
-      id: 5,
-      title: "From Classroom to Boardroom: Student Founder Stories",
-      excerpt:
-        "Inspiring journeys of 3 student entrepreneurs who launched successful ventures",
-      date: "January 22, 2023",
-      author: "Priya Gupta",
-      image: "/blog5.jpg",
-      link: "https://linkedin.com/company/ecell-prmitr/posts/112",
-      category: "Stories",
-    },
-    {
-      id: 6,
-      title: "The Investor's Perspective: What They Look For",
-      excerpt:
-        "Key takeaways from our recent investor panel on early-stage startup funding",
-      date: "December 10, 2022",
-      author: "Vikram Joshi",
-      image: "/blog6.jpg",
-      link: "https://linkedin.com/company/ecell-prmitr/posts/131",
+      image: "/blog1.jpg",
+      link: "https://www.linkedin.com/posts/e-cell-prmit-r_can-a-college-idea-ever-become-a-million-dollar-activity-7355146182228144128-7oAV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD6AprIBorGuLjbC54UbRA2E5USMn0YAVPU ",
       category: "Startups",
     },
   ];
@@ -98,7 +43,7 @@ const BlogPage = () => {
       : blogPosts.filter((post) => post.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-[#0E001B]">
+    <div className="min-h-screen pt-15 bg-[#0E001B]">
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#8B5CF6]/10 to-transparent">
         <div className="max-w-7xl mx-auto text-center">

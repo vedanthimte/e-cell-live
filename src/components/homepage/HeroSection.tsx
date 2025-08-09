@@ -63,7 +63,7 @@ const HeroSection = () => {
       ></div>
 
       {/* Content Container */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between py-24 lg:py-0">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between py-12 md:py-30 lg:py-0">
         {/* Left Column - Text Content */}
         <motion.div
           variants={container}

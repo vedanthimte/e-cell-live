@@ -22,16 +22,23 @@ const UpcomingEvents = () => {
   const events = [
     {
       id: 1,
-      name: "Startup Pitch Bootcamp",
-      date: "Aug 25, 2023",
-      description: "Master the art of pitching your startup idea to investors",
+      name: "Recruitment of Team Members",
+      date: "Aug 14, 2025",
+      description: "Join us to build the future of innovation at E-Cell!",
       cta: "Register",
+    },
+    {
+      id: 2,
+      name: "PitchFest'25 ",
+      date: "Aug 19, 2025",
+      description: "Showcase your startup ideas and get feedback from industry experts.",
+      cta: "Coming soon",
     },
   ];
 
   return (
     <section className="w-full bg-[#0E001B] py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl pt-15 mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

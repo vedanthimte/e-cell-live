@@ -65,7 +65,7 @@ export default function Navbar() {
           boxShadow: isScrolled
             ? "0 8px 25px rgba(0,0,0,0.25)"
             : "0 4px 15px rgba(0,0,0,0.15)",
-          backdropFilter: "blur(18px)",
+          backdropFilter: "blur(5px)",
         }}
         transition={{ duration: 0.3 }}
         style={{
