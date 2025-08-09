@@ -44,13 +44,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToContact = () => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth",
-    });
-    setIsMenuOpen(false);
-  };
+
 
   return (
     <div className="fixed top-4 w-full flex justify-center z-50 px-4">
@@ -133,22 +127,7 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <motion.button
-            onClick={scrollToContact}
-            className="ml-6 lg:ml-8 px-4 py-1.5 rounded-full text-sm font-medium transition-all"
-            whileHover={{
-              scale: 1.05,
-              backgroundColor: colors.royalViolet,
-            }}
-            whileTap={{ scale: 0.95 }}
-            style={{
-              color: colors.electricWhite,
-              backgroundColor: colors.deepIndigo,
-              border: `1px solid ${colors.royalViolet}`,
-            }}
-          >
-            Contact Us
-          </motion.button>
+          
         </div>
 
         {/* Mobile Menu Button */}
@@ -221,18 +200,6 @@ export default function Navbar() {
                   </motion.a>
                 </Link>
               ))}
-              <motion.button
-                onClick={scrollToContact}
-                className="w-full text-left px-4 py-3 rounded-lg text-base font-medium mx-1"
-                whileHover={{
-                  backgroundColor: `${colors.royalViolet}26`,
-                  x: 8,
-                }}
-                whileTap={{ scale: 0.98 }}
-                style={{ color: colors.neonLilac }}
-              >
-                Contact Us
-              </motion.button>
             </div>
           </motion.div>
         )}
