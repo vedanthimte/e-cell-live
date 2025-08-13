@@ -20,18 +20,11 @@ const UpcomingEvents = () => {
   const events = [
     {
       id: 1,
-      name: "Recruitment of Team Members",
-      date: "Aug 14, 2025",
-      description: "Join us to build the future of innovation at E-Cell!",
-      cta: "Register",
-    },
-    {
-      id: 2,
       name: "PitchFest'25",
       date: "Aug 19, 2025",
       description:
-        "Showcase your startup ideas and get feedback from industry experts.",
-      cta: "Coming soon",
+        "🚀 Win Pitch Fest'25 and head straight to Eureka Zonals - Asia's biggest business model stage. Got a startup idea? This is your BIG moment!",
+      cta: "Register",
     },
   ];
 
@@ -86,7 +79,6 @@ const UpcomingEvents = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               className="bg-[#1C0233] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-[#8B5CF6]/30 border border-[#8B5CF6]/20 hover:border-[#8B5CF6]/50 transition-all duration-300 relative z-10"
             >
-              
               <div className="p-6">
                 {/* Event Header */}
                 <div className="flex items-start mb-4">
@@ -119,7 +111,7 @@ const UpcomingEvents = () => {
                 {/* CTA Button / Static Text */}
                 {event.cta === "Register" ? (
                   <Link
-                    href="/registerform"
+                    href="https://forms.gle/hgyovsteTLx5zjeSA"
                     className="inline-block px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#1C0233] text-[#FFFFFF] hover:shadow-[0_0_15px_#8B5CF6]/50 transition-all duration-300"
                   >
                     {event.cta}

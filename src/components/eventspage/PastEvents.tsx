@@ -63,6 +63,15 @@ const PastEvents = () => {
       image: illuminate,
       category: "Workshop",
     },
+    {
+      id: 5,
+      name: "Recruitment'25",
+      date: "Aug 12, 2025",
+      summary:
+        "E-Cell PRMIT&R's second recruitment drive to build a passionate and dynamic team.",
+      image: recruitment,
+      category: "Recruitment",
+    },
   ];
 
   const filteredEvents =
