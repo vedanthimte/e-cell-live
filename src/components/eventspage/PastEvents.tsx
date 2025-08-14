@@ -5,6 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import recruitment from "./pics/recruitment.jpg";
 import pitchFest from "./pics/pitchFest.jpg";
 import illuminate from "./pics/illuminate.jpg";
+import signoff from "./pics/signoff.jpg";
 
 const PastEvents = () => {
   type EventType = {
@@ -72,6 +73,15 @@ const PastEvents = () => {
       image: recruitment,
       category: "Recruitment",
     },
+    {
+      id: 6,
+      name: "Signing Off",
+      date: "August 14, 2025",
+      summary:
+        "Signing Off to the old team members with gratitude and best wishes.",
+      image: signoff,
+      category: "Signing Off",
+    }
   ];
 
   const filteredEvents =
