@@ -9,6 +9,7 @@ import rutuja from "../teampics/rutuja.jpg";
 import mahesh from "../teampics/mahesh.jpg";
 import satwik from "../teampics/satwik.jpg";
 import rutvik from "../teampics/rutvik.jpg";
+import vedant from "../teampics/vedant.jpg";
 
 
 const TeamLeads = () => {
@@ -42,12 +43,30 @@ const TeamLeads = () => {
       },
     },
     {
+      name: "VEDANT HIMTE",
+      position: "Corporate Relations Head",
+      image: vedant,
+      socials: {
+        linkedin: "https://www.linkedin.com/in/vedanthimte",
+        instagram: "https://www.instagram.com/_vedanthimte/",
+      },
+    },
+    {
       name: "SANIA RAUT",
       position: "Media & Content Head",
       image: sania,
       socials: {
         linkedin: "https://linkedin.com/in/sania-raut-0ba818206",
         instagram: "https://www.instagram.com/saeunaa_?igsh=a2c4anJrdXFtMWxz",
+      },
+    },
+    {
+      name: "SATWIK KALE",
+      position: "Design Head",
+      image: satwik,
+      socials: {
+        linkedin: "https://www.instagram.com/stw1k/",
+        instagram: "https://www.instagram.com/stw1k/",
       },
     },
     {
@@ -79,15 +98,7 @@ const TeamLeads = () => {
           "https://www.instagram.com/rutvik_b07?igsh=MWo4aTd2MGd2cDdtcQ==",
       },
     },
-    {
-      name: "SATWIK KALE",
-      position: "Design Head",
-      image: satwik,
-      socials: {
-        linkedin: "NA",
-        instagram: "https://www.instagram.com/stw1k/",
-      },
-    },
+
     {
       name: "RUTUJA NAIK",
       position: "PR Head",
