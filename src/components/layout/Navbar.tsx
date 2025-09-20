@@ -20,6 +20,7 @@ const navLinks = [
   { name: "Team", href: "/team" },
   { name: "Events", href: "/events" },
   { name: "Blogs", href: "/blogs" },
+  { name: "Register", href: "/register" },
 ];
 
 const linkHoverVariants = {
