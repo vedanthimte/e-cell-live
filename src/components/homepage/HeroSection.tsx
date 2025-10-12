@@ -111,9 +111,9 @@ const HeroSection = () => {
             variants={item}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
-            <Link href="/events" passHref>
-              <motion.a
-                className="px-8 py-3 text-white rounded-full font-medium shadow-lg transition-all duration-200 text-center"
+            <Link href="/events">
+              <motion.button
+                className="px-8 py-3 text-white rounded-full font-medium shadow-lg transition-all duration-200 text-center cursor-pointer border-none"
                 style={{
                   background: `linear-gradient(to right, ${COLORS.royalViolet}, ${COLORS.deepIndigo})`,
                   boxShadow: `0 0 0 ${COLORS.neonLilac}40`,
@@ -125,7 +125,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 Explore Events
-              </motion.a>
+              </motion.button>
             </Link>
           </motion.div>
         </motion.div>

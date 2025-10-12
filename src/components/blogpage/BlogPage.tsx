@@ -65,33 +65,6 @@ const BlogPage = () => {
             Read insights, reflections, and stories straight from our LinkedIn
             publications
           </motion.p>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            <a
-              href="https://www.linkedin.com/company/e-cell-prmit-r/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-full hover:bg-[#8B5CF6] hover:text-white transition-colors hover:shadow-[0_0_15px_#8B5CF6]/30"
-            >
-              Visit our LinkedIn
-              <svg
-                className="w-4 h-4 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </a>
-          </motion.div>
         </div>
       </section>
 
