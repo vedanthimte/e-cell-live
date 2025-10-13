@@ -75,7 +75,6 @@ const BlogPage = () => {
     },
   ];
 
-  const categories = ["All", "Startups", "Events", "Tech", "Team", "Stories"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredPosts =

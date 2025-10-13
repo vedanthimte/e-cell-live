@@ -32,7 +32,7 @@ const CoreTeam = () => {
       socials: {
         linkedin: "https://linkedin.com/in/mayur-doijod-515514290",
         instagram:
-          "https://www.instagram.com/mayur.doijod?igsh=MXYwYTVocWIyaGZtZQ==",
+          "https://www.instagram.com/mayur.doijod",
       },
     },
     {
@@ -42,7 +42,7 @@ const CoreTeam = () => {
       socials: {
         linkedin: "https://linkedin.com/in/priyanshu-thakare",
         instagram:
-          "https://www.instagram.com/priyaannsshhu?igsh=Z3loOWlrazJ5NmJ5",
+          "https://www.instagram.com/priyaannsshhu",
       },
     },
     {
@@ -52,7 +52,7 @@ const CoreTeam = () => {
       socials: {
         linkedin: "https://linkedin.com/in/jay-nagpure-7bb8492a0",
         instagram:
-          "https://www.instagram.com/jayynagpure17?igsh=azhieTlkNjVycXVs",
+          "https://www.instagram.com/jayynagpure17",
       },
     },
     {
@@ -62,7 +62,7 @@ const CoreTeam = () => {
       socials: {
         linkedin: "https://linkedin.com/in/prathmesh-aru-437b97215",
         instagram:
-          "https://www.instagram.com/_prathm_02_?igsh=MXRsenlkbWIxajYybQ==",
+          "https://www.instagram.com/_prathm_02_",
       },
     },
     {
@@ -72,7 +72,7 @@ const CoreTeam = () => {
       socials: {
         linkedin: "https://linkedin.com/in/omkharad10x06",
         instagram:
-          "https://www.instagram.com/omkharad10x?igsh=MWtyMzBrcGc0cG5kNA==",
+          "https://www.instagram.com/omkharad10x",
       },
     },
   ];
