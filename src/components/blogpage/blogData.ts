@@ -1,8 +1,8 @@
-import banner1 from "@/components/blogpage/banner/id1.jpg";
-import banner2 from "@/components/blogpage/banner/id2.png";
-import banner3 from "@/components/blogpage/banner/id3.png";
-import banner4 from "@/components/blogpage/banner/id4.png";
-import banner5 from "@/components/blogpage/banner/id5.png";
+import banner1 from "./banner/id1.jpg";
+import banner2 from "./banner/id2.png";
+import banner3 from "./banner/id3.png";
+import banner4 from "./banner/id4.png";
+import banner5 from "./banner/id5.png";
 
 export const blogPosts = [
   {
