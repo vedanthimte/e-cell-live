@@ -4,7 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import banner1 from "./banner/id1.jpg";
-
+import banner2 from "@/components/blogpage/banner/id2.png";
+import banner3 from "@/components/blogpage/banner/id3.png";
+import banner4 from "@/components/blogpage/banner/id4.png";
+import banner5 from "@/components/blogpage/banner/id5.png";
 const BlogPage = () => {
   // Animation variants
   const container = {
@@ -40,7 +43,7 @@ const BlogPage = () => {
         "How organizing a college event is your first lesson in entrepreneurship.",
       date: "August 10, 2025",
       author: "E-Cell",
-      image: banner1,
+      image: banner2,
       category: "Campus Lessons",
     },
     {
@@ -50,7 +53,7 @@ const BlogPage = () => {
         "Why leading a college event is the best crash course in startup leadership.",
       date: "August 17, 2025",
       author: "E-Cell",
-      image: banner1,
+      image: banner3,
       category: "Leadership",
     },
     {
@@ -60,7 +63,7 @@ const BlogPage = () => {
         "How college event budgeting is your first real-world finance lesson.",
       date: "August 24, 2025",
       author: "E-Cell",
-      image: banner1,
+      image: banner4,
       category: "Finance",
     },
     {
@@ -70,7 +73,7 @@ const BlogPage = () => {
         "Why post-event reflection is the secret to entrepreneurial growth.",
       date: "August 31, 2025",
       author: "E-Cell",
-      image: banner1,
+      image: banner5,
       category: "Growth",
     },
   ];
