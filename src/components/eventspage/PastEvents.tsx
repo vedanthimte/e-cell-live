@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import recruitment from "./pics/recruitment.jpg";
 import pitchFest from "./pics/pitchFest.jpg";
+import pitchFest25 from "./pics/pitchFest25.png";
 import illuminate from "./pics/illuminate.jpg";
 import signoff from "./pics/signoff.jpg";
 
@@ -81,6 +82,15 @@ const PastEvents = () => {
         "Signing Off to the old team members with gratitude and best wishes.",
       image: signoff,
       category: "Signing Off",
+    },
+    {
+      id: 7,
+      name: "PitchFest'25",
+      date: "Aug 19, 2025",
+      summary:
+        "Win Pitch Fest'25 and head straight to Eureka Zonals - Asia's biggest business model stage. Got a startup idea? This was your BIG moment!",
+      image: pitchFest25,
+      category: "Competition",
     }
   ];
 

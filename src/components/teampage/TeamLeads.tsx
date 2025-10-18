@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import anand from "../teampics/anand.jpg";
+import khushi from "../teampics/khushi.png";
 import sania from "../teampics/sania.jpg";
 import kanak from "../teampics/kanak.jpg";
 import tannay from "../teampics/tannay.jpg";
@@ -33,13 +33,13 @@ const TeamLeads = () => {
 
   const teamLeads = [
     {
-      name: "ANAND KATARIA",
+      name: "KHUSHI PURI",
       position: "Web & Technical Head",
-      image: anand,
+      image: khushi,
       socials: {
-        linkedin: "https://linkedin.com/in/anand-katariya-709309225",
+        linkedin: "https://www.linkedin.com/in/khushi-puri-1195b7290",
         instagram:
-          "https://www.instagram.com/_anandkatariya?igsh=MTFxMm56bHhucXJldA==",
+          "https://www.instagram.com/khushipuri1996",
       },
     },
     {
@@ -57,7 +57,7 @@ const TeamLeads = () => {
       image: sania,
       socials: {
         linkedin: "https://linkedin.com/in/sania-raut-0ba818206",
-        instagram: "https://www.instagram.com/saeunaa_?igsh=a2c4anJrdXFtMWxz",
+        instagram: "https://www.instagram.com/saeunaa_",
       },
     },
     {
@@ -76,7 +76,7 @@ const TeamLeads = () => {
       socials: {
         linkedin: "https://linkedin.com/in/kanak-gupta-99406730a",
         instagram:
-          "https://www.instagram.com/kanak.guptaaa?igsh=ajgwbGlvMjZyZXhz",
+          "https://www.instagram.com/kanak.guptaaa",
       },
     },
     {
@@ -85,7 +85,7 @@ const TeamLeads = () => {
       image: tannay,
       socials: {
         linkedin: "https://linkedin.com/in/tanay-sawwalakhe-0a79a7290",
-        instagram: "https://www.instagram.com/tanay_3011?igsh=cDFmMWoyMjc4d2Zj",
+        instagram: "https://www.instagram.com/tanay_3011",
       },
     },
     {
@@ -95,7 +95,7 @@ const TeamLeads = () => {
       socials: {
         linkedin: "https://linkedin.com/in/rutvik-bele-559b24290",
         instagram:
-          "https://www.instagram.com/rutvik_b07?igsh=MWo4aTd2MGd2cDdtcQ==",
+          "https://www.instagram.com/rutvik_b07",
       },
     },
 

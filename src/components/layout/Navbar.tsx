@@ -186,9 +186,9 @@ export default function Navbar() {
           >
             <div className="px-2 pt-2 pb-5 space-y-1 sm:px-3">
               {navLinks.map((link) => (
-                <Link key={link.name} href={link.href} passHref>
-                  <motion.a
-                    className="block px-4 py-3 rounded-lg text-base font-medium mx-1"
+                <Link key={link.name} href={link.href}>
+                  <motion.div
+                    className="block px-4 py-3 rounded-lg text-base font-medium mx-1 cursor-pointer"
                     whileHover={{
                       backgroundColor: `${colors.royalViolet}26`,
                       x: 8,
@@ -198,7 +198,7 @@ export default function Navbar() {
                     style={{ color: colors.coolGray }}
                   >
                     {link.name}
-                  </motion.a>
+                  </motion.div>
                 </Link>
               ))}
             </div>
