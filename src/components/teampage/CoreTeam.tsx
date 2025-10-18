@@ -8,7 +8,7 @@ import prathmesh from "../teampics/prathmesh.jpg";
 import om from "../teampics/om.jpg";
 
 const CoreTeam = () => {
-  // Animation variants
+
   const container = {
     hidden: { opacity: 0 },
     show: {
