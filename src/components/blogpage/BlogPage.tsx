@@ -41,7 +41,7 @@ const BlogPage = () => {
       title: "The Hidden Startup Inside Every College Event, Learning to Build from Zero",
       excerpt:
         "How organizing a college event is your first lesson in entrepreneurship.",
-      date: "August 10, 2025",
+      date: "October 6, 2025",
       author: "E-Cell",
       image: banner2,
       category: "Campus Lessons",
@@ -51,7 +51,7 @@ const BlogPage = () => {
       title: "Team Chaos = Leadership School — Managing People Like a Founder",
       excerpt:
         "Why leading a college event is the best crash course in startup leadership.",
-      date: "August 17, 2025",
+      date: "October 8, 2025",
       author: "E-Cell",
       image: banner3,
       category: "Leadership",
@@ -61,7 +61,7 @@ const BlogPage = () => {
       title: "The Budget Game — How Handling Event Money Teaches You Startup Finance",
       excerpt:
         "How college event budgeting is your first real-world finance lesson.",
-      date: "August 24, 2025",
+      date: "October 10, 2025",
       author: "E-Cell",
       image: banner4,
       category: "Finance",
@@ -71,7 +71,7 @@ const BlogPage = () => {
       title: "The Aftermath — Feedback, Failure & the Growth Mindset",
       excerpt:
         "Why post-event reflection is the secret to entrepreneurial growth.",
-      date: "August 31, 2025",
+      date: "October 12, 2025",
       author: "E-Cell",
       image: banner5,
       category: "Growth",
