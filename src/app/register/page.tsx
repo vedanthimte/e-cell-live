@@ -8,17 +8,15 @@ export default function Register() {
           className="relative w-full overflow-hidden rounded-lg shadow-md 
                      h-screen " // Full height on mobile, smaller on desktop
         >
-          No registration available
-
-          {/* <iframe
-            src="https://payments.cashfree.com/forms/finance-masterclass"
+          <iframe
+            src=""
             className="absolute top-0 left-0 w-full h-full rounded-lg bg-[#0E001B]"
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}
           >
             Loading…
-          </iframe> */}
+          </iframe>
         </div>
       </div>
     </section>
